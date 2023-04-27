@@ -16,5 +16,5 @@ def generate(topics):
     return {
         response["data"][0]["url"]
     }
-  
-  st.image(generate(topics))
+
+st.image(generate(topics))
