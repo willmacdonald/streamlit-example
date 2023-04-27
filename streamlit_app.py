@@ -18,4 +18,4 @@ def generate(topics):
         response
     }
 
-st.image(generate(topics))
+print(generate(topics))
