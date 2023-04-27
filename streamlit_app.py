@@ -14,6 +14,6 @@ def generate(topics):
         size="256x256",
         response_format="url"
         )
-    return response["data"][0]
+    return response["data"][0]["url"]
 
 print(generate(topics))
