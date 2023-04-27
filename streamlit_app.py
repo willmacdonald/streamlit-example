@@ -9,7 +9,7 @@ def generate(topics):
     openai.organization = "org-ZXIgSEZAnove37o1egimi8P8"
 
     response = openai.Image.create(
-        prompt=",
+        prompt=topics,
         n=1,
         size="256x256",
         )
