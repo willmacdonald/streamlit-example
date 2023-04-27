@@ -16,4 +16,8 @@ def generate(topics):
         )
     return response["data"][0]["url"]
 
-print(generate(topics))
+url = generate(topics)
+print("testing")
+print(url)
+st.write(url)
+st.image(url)
