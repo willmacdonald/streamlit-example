@@ -12,9 +12,10 @@ def generate(topics):
         prompt=topics,
         n=1,
         size="256x256",
+        response_format="url"
         )
     return {
-        response["data"][0]["url"]
+        response
     }
 
 st.image(generate(topics))
